@@ -1,0 +1,134 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  border-bottom: 1px solid #efefef;
+  padding: 0 80px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 10;
+  user-select: none;
+
+  transition: height 0.25s;
+
+  @media(max-width: 768px) {
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    img {
+      width: 40px;
+      height: auto;
+      padding-top: 20px;
+    }
+    z-index: 10;
+  }
+
+  .close {
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    @media(max-width: 768px) {
+      display: block;
+      width: 32px;
+      height: 32px;
+      color: #999;
+      fill: #999;
+      position: relative;
+      top: 10px;
+    }
+    z-index: 10;
+  }
+
+  .hamburger:hover {
+    @media(max-width: 768px) {
+      fill: #555;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+
+    transition: opacity 0.5s;
+
+    @media(max-width: 768px) {
+      opacity: 0;
+      position: absolute;
+      top: -10000px;
+      left: -10000px;
+    }
+
+    a, a:link, a:active, a:visited {
+      display: block;
+      margin: 0 20px;
+      text-decoration: none;
+      color: #000;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+    }
+    a:hover {
+      color: #555;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &.open {
+      z-index: 10;
+      height: 100vh;
+      align-items: flex-start;
+      .hamburger {
+        display: none;
+      }
+      .close {
+        @media(max-width: 768px) {
+          display: block;
+          width: 32px;
+          height: 32px;
+          color: #999;
+          fill: #999;
+          position: relative;
+          top: 10px;
+          &:hover {
+            fill: #555;
+          }
+        }
+      }
+      nav {
+        top: 0;
+        left: 0;
+        z-index: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        opacity: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a, a:link, a:active, a:visited {
+          margin: 20px;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

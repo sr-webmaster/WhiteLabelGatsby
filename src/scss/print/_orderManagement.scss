@@ -1,0 +1,41 @@
+@import '../colors';
+
+&.orderManagement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 100px 0;
+
+    h1{
+      @media(max-width: 640px){
+        line-height: 36px;
+      }
+    }
+
+
+  .text {
+    box-sizing: border-box;
+    padding-left: 10vw;
+    color: $printBlue;
+    line-height: 30px;
+    font-size: 24px;
+
+    @media(max-width:768px) {
+      width: 80%;
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 5vw;
+    }
+  }
+  img {
+    max-width: 50%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    @media(max-width:768px) {
+      width: 20%;
+    }
+  }
+}

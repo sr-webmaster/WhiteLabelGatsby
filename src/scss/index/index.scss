@@ -1,0 +1,72 @@
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+
+.index {
+  section {
+    min-height: 90vh;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+
+    h1 {
+      padding-top: 0;
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+    }
+
+    h2 {
+      padding-top: 0;
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+    }
+
+    h3 {
+      padding-top: 0;
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .75px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .shadowButton {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 13px;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+
+    p {
+      padding-top: 0;
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .small {
+      padding-top: 0;
+      margin-top: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+
+    @import './who';
+    @import './results';
+    @import './what';
+    @import './how';
+    @import './contact';
+    @import './modalContent';
+  }
+}

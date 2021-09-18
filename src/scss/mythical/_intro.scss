@@ -1,0 +1,57 @@
+&.intro {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100vw;
+
+  .copy {
+    max-width: 700px;
+    margin-bottom: 30px;
+    padding: 20px;
+    margin-right: 200px;
+    @media(max-width:1000px) {
+      margin-right: 0;
+    }
+
+    h1 {
+      color: #F05F36;
+      font-size: 12vw;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin: 40px 0 20px 0;
+      @media(min-width:1000px) {
+        font-size: 10vw;
+      }
+      margin: 40px 0 20px 0;
+    }
+    p {
+      margin-bottom: 30px;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: 1px;
+    }
+  }
+  .hero {
+    width: 100%;
+    height: auto;
+    min-width: 700px;
+  }
+  .numbers {
+    display: block;
+    margin: 100px 0 50px 0;
+    max-width: 80vw;
+    width: auto;
+    height: auto;
+  }
+  .needed {
+    color: #999;
+    font-size: 20px;
+    max-width: 700px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}

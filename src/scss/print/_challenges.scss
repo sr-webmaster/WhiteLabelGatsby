@@ -1,0 +1,38 @@
+@import '../colors';
+
+&.challenges {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: $printBlue;
+      font-size: 36px;
+    }
+  }
+  .copy {
+    max-width: none;
+    padding: 0;
+    p {
+      box-sizing: border-box;
+      padding: 0 24vw;
+      max-width: 100%;
+      color: #0E31E0;
+
+      @media(max-width: 640px){
+        font-size: 15px;
+        line-height: 22px;
+        padding: 0 4vw;
+      }
+    }
+
+  }
+  margin-bottom: 40px;
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  margin-bottom: 40px;
+  
+  button{
+      box-shadow: none!important;
+  }
+}

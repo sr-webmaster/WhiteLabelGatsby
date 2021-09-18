@@ -1,0 +1,38 @@
+&.facts {
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing:border-box;
+    width: 100%;
+    img {
+      width: 250px;
+      height: auto;
+    }
+    margin-bottom: 20px;
+  }
+
+  .copy {
+    max-width: none;
+    padding: 0;
+    p {
+      box-sizing: border-box;
+      padding: 0 24vw;
+      max-width: 100%;
+      color: #0E31E0;
+
+      @media(max-width: 640px){
+        font-size: 15px;
+        line-height: 22px;
+        padding: 0 4vw;
+      }
+    }
+  }
+  margin-bottom: 40px;
+
+  button{
+      box-shadow: none!important;
+  }
+
+}

@@ -1,0 +1,71 @@
+@import '../colors';
+
+&.results {
+  background-color: $printBlue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 100px 0;
+
+  h1 {
+    color: #fff;
+    font-size: 40px;
+  }
+
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 40px 10vw;
+    padding-left: 10px;
+
+    @media(max-width:768px) {
+      width: 80%;
+      padding:0;
+    }
+
+    @media(max-width:500px) {
+      width: 100%;
+      padding:0 20px;
+    }
+
+    .stat {
+      width: 50%;
+      @media(max-width:768px) {
+        width: 80%;
+      }
+      @media(max-width:500px) {
+        width: 100%;
+      }
+      box-sizing: border-box;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      align-items: center;
+      flex-basis: 0;
+      .number {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+        margin-right: 30px;
+        width: 300px;
+        text-align: right;
+
+          @media(max-width: 640px){
+            font-size: 30px;
+          }
+      }
+      .blurb {
+        color: #fff;
+        width: 400px;
+      }
+    }
+  }
+}

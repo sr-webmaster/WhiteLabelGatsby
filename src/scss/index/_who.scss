@@ -1,0 +1,66 @@
+&.who {
+
+  .hero {
+
+    position: relative;
+
+    img {
+      width: 40%;
+      height: auto;
+      display: block;
+      @media(max-width: 640px){
+        width: 80%;
+      }
+    }
+
+    span {
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      top: 0;
+      left: 0;
+      color: #fff;
+      font-size: 7vw;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.5vw;
+      text-shadow: 0 0 0.3vw #000;
+    }
+
+  }
+
+  .copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin-top: 60px;
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      display: block;
+      padding-right: 100px;
+      @media(max-width: 768px) {
+        padding: 0;
+        margin-bottom: 60px;
+      }
+    }
+
+    p {
+      display: block;
+      max-width: 50vw;
+      @media(max-width: 768px) {
+        max-width: 90vw;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,83 @@
+@import '../colors';
+
+&.results {
+  background-color: $gray;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 0;
+  margin-top: 100px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  h1 {
+    color: #000000;
+    font-size: 40px;
+  }
+
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 40px 10vw;
+    padding-left: 10px;
+
+    @media(max-width:768px) {
+      width: 80%;
+      padding:0;
+    }
+
+    @media(max-width:500px) {
+      width: 100%;
+      padding:0 20px;
+    }
+
+    .stat {
+      width: 50%;
+      @media(max-width:768px) {
+        width: 80%;
+      }
+      @media(max-width:500px) {
+        width: 100%;
+      }
+      box-sizing: border-box;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      align-items: center;
+      flex-basis: 0;
+      .number {
+        color: #000000;
+        font-size: 40px;
+        font-weight: 700;
+        margin-right: 30px;
+        width: 300px;
+        text-align: right;
+
+          @media(max-width: 640px){
+            font-size: 30px;
+          }
+      }
+      .blurb {
+        color: #767676;
+        width: 400px;
+      }
+    }
+  }
+  .thingsToConsider {
+    width: 100vw;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    @media(max-width: 768px) {
+      width: 100vw;
+    }
+  }
+}

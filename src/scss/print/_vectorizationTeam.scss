@@ -1,0 +1,53 @@
+&.vectorizationTeam {
+  box-sizing: border-box;
+  padding: 100px 0;
+  background-color: #2E2C29;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #fff;
+  }
+
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    @media(max-width:768px) {
+      flex-direction: column;
+    }
+    .after, .before {
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      img {
+        width: 80%;
+        height: auto;
+      }
+      span {
+        color: #fff;
+        padding-top: 20px;
+      }
+    }
+    .before {
+      @media(max-width:768px) {
+        margin-bottom: 40px;
+      }
+    }
+    .after {
+      img {
+        position: relative;
+      }
+      @media(max-width:768px) {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}

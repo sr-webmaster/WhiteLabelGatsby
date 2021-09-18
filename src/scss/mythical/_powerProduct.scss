@@ -1,0 +1,54 @@
+@import '../colors';
+
+&.powerProduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 100px;
+  background-color: #f2f2f2;
+  @media(max-width:768px) {
+    padding: 100px 20px;
+  }
+  h2 {
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $mythicalOrange;
+    margin-bottom: 40px;
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    @media(max-width:768px) {
+      font-size: 8vw;
+    }
+  }
+  img {
+    margin-bottom: 40px;
+    width: 300px;
+    height: auto;
+  }
+  .header {
+    color: $mythicalOrange;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    @media(max-width:768px) {
+      font-size: 20px;
+    }
+  }
+  .subHeader {
+    color: $mythicalOrange;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .description {
+    color: #555;
+    max-width: 600px;
+    font-weight: 200;
+    line-height: 30px;
+    text-align: center;
+  }
+}

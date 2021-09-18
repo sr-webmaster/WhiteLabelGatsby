@@ -1,0 +1,40 @@
+@import './fonts';
+@import './colors';
+@import './breakpoints';
+
+body {
+
+  @import './menu';
+  @import './modal';
+  @import './footer';
+  @import './components/shadowButton';
+  @import './components/modal';
+  @import './components/carousel.scss';
+
+  margin: 0;
+  padding: 80px 0 0 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.ReactModal__Content {
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 80px;
+  .modal-container {
+    padding: 0 30px;
+    position: relative;
+    @media(max-width: 768px) {
+      padding: 0;
+    }
+    .close-btn {
+      position: absolute;
+      right: 0;
+      width: 26px;
+    }
+  }
+}
+
+.ReactModal__Overlay {
+  z-index: 5;
+}

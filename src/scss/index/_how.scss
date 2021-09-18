@@ -1,0 +1,115 @@
+&.how {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding-bottom: 0px;
+
+  h2 {
+    margin: 120px 0;
+  }
+
+  .trains {
+    h2 {
+      margin-bottom: 50px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 600px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #efefef;
+    .items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 70px;
+          height: auto;
+        }
+        span {
+          font-size: 12px;
+          text-transform: uppercase;
+          display: block;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .blurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    img {
+      width: 25px;
+      height: auto;
+    }
+    div {
+      margin: 15px 0;
+    }
+    p {
+      color: #ccc;
+      max-width: 200px;
+      text-align: center;
+    }
+  }
+
+  .thingsToConsider {
+    width: 80vw;
+    height: auto;
+    padding-top: 50px;
+    @media(max-width: 768px) {
+      width: 100vw;
+    }
+  }
+
+  .image-gallery{
+    padding-bottom: 0px;
+    width: 100%;
+  }
+
+  .image-gallery-right-nav {
+    display: none;
+}
+
+  .image-gallery-left-nav {
+    display: none;
+}
+
+  .image-gallery-slide .image-gallery-description {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    pointer-events: none;
+    text-shadow: 0 0 1vw rgba(0, 0, 0, .3);
+
+      @media(max-width: 640px){
+        font-size: 30px;
+      }
+  }
+
+}

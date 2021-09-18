@@ -1,0 +1,235 @@
+&.what {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  padding-bottom: 40px;
+
+  .things {
+    box-sizing: border-box;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 80px;
+
+    @media(max-width: 976px) {
+      flex-wrap: wrap;
+    }
+
+    .thing {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 120px;
+      box-sizing: border-box;
+
+      @media(max-width: 976px) {
+        flex-wrap: wrap;
+        margin: 0 20px 20px 20px;
+      }
+
+      img {
+        width: 26px;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+
+  .logosheader{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+      h1{
+        font-size: 40px;
+      }
+  }
+
+
+  .brands {
+    width: 100vw;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 0px;
+    padding-bottom: 80px;
+}
+
+  .image_pop_left{
+    float: left;
+    padding-right: 60px;
+    @media(max-width: 640px) {
+      display: none;
+    }
+  }
+
+  .image_pop_right{
+    padding-top: 30px;
+  }
+}
+
+.privatelabelhero{
+
+  .privatelabel{
+  @media(max-width: 640px){
+    width: 100vw;
+    }
+  }
+
+}
+
+  .readMore {
+    overflow: hidden;
+    div {
+      display:none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      transition: opacity 0.5s, transform 0.1s;
+      transform: scale(0);
+      opacity: 0;
+      max-width: 600px;
+      box-sizing: border-box;
+      padding: 40px 20px;
+      text-align: center;
+      &.block {
+        display: flex;
+      }
+      &.visible {
+        opacity: 1;
+        transform: scale(1);
+      }
+      a {
+        margin-top: 20px;
+        display: block;
+      }
+    }
+  }
+
+  .copy {
+    box-sizing: border-box;
+    padding: 0 100px;
+    margin-top: 200px;
+    margin-bottom: 0;
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+    h1 {
+      margin-bottom: 40px;
+    }
+    h2 {
+      padding-bottom: 15px;
+    }
+    p {
+      max-width: 50vw;
+      @media (max-width: 768px) {
+        max-width: 90vw;
+      }
+    }
+  }
+
+  .additional {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+
+    .buildings {
+      max-width: 85vw;
+      height: auto;
+    }
+
+    @media(max-width: 976px) {
+      flex-direction: column;
+    }
+
+    .left {
+      position: relative;
+      width: 40vw;
+      padding-right: 20px;
+
+        @media(max-width: 640px){
+          padding-right: 0;
+        }
+
+      .minpop{
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+
+      @media(max-width: 976px) {
+        margin-top: 150px;
+        width: 100%;
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .squiggle {
+        width: 44px;
+        height: auto;
+        display: block;
+        margin-bottom: 25px;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        a {
+          cursor: pointer;
+          border: 1px solid #979797;
+          display: block;
+          margin-right: -1px;
+          box-sizing: border-box;
+          padding: 12px 50px;
+        }
+      }
+
+      .pop {
+        background-color: #f8f8f8;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s;
+        pointer-events: none;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+          @media(max-width: 640px){
+            padding-top: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 4px;
+            width: 90%;
+            }
+
+        &.visible {
+          pointer-events: auto;
+          opacity: 1;
+        ul {
+          list-style: none;
+        li {
+          margin-left: 30px;
+            }
+          }
+        }
+        a { cursor: pointer; }
+      }
+
+    }
+  }

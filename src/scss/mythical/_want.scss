@@ -1,0 +1,24 @@
+&.want {
+  position: relative;
+  padding-top: 80vh;
+  box-sizing: border-box;
+  @media(max-width:768px) {
+    padding-top: 200px;
+  }
+  img:nth-child(1) {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+  }
+  img:nth-child(2) {
+    width: 100%;
+    height: auto;
+  }
+  img:nth-child(3) {
+    padding: 60px 0;
+    width: 100%;
+    height: auto;
+  }
+}

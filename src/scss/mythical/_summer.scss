@@ -1,0 +1,38 @@
+&.summer {
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .palmTrees {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      img {
+        margin-bottom: 40px;
+        max-width: 40%;
+        height: auto;
+      }
+      span {
+        color: #fff;
+        font-size: 1.5vw;
+        letter-spacing: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+  img.big {
+    margin-top: 100px;
+    max-width: 100%;
+    height: auto;
+  }
+}

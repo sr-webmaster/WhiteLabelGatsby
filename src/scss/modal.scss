@@ -1,0 +1,53 @@
+.modal-container {
+  position: relative;
+  .modal-title {
+    display: flex;
+    img {
+      display: block;
+      padding-right: 15px;
+    }
+    span {
+      display: block;
+      font-size: 24px;
+    }
+    .title {
+      padding-top: 20px;
+    }
+  }
+  .list-container {
+    line-height: 27px;
+    display: flex;
+    @media(max-width: 768px) {
+      display: block;
+    }
+    .left-container {
+      display: block;      
+      letter-spacing: 0.85px;
+    }
+    ul {
+      margin: 0;
+      margin-top: 15px;
+      li {
+        padding-bottom: 20px;
+        &:before {
+          content: '·';
+          color: #D8D8D8;
+        }
+      }
+    }
+    .right-container {
+      .right-content {
+        letter-spacing: 0.85px;
+      }
+      .faq-title {
+        border-top: 1px solid #CBCBCB;
+        padding-top: 10px;
+        margin-left: 37px;
+        display: block;
+      }
+      p {
+        margin-left: 37px;
+      }
+    }
+  }  
+}

@@ -1,0 +1,56 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  &.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .container {
+    background-color: #fff;
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.25);
+        /* padding: 60px; */
+        padding-right: 60px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        max-width: 1140px;
+        height: auto;
+        max-height: 94%;
+        overflow-y: scroll;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+      @media(max-width: 640px){
+        padding: 10px;
+        width: 94%;
+        height: auto;
+        max-height: 94%;
+        overflow-y: scroll;
+      }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+    .content {
+
+      @media(max-width: 640px){
+        padding-top: 50px;
+      }
+    }
+  }
+}

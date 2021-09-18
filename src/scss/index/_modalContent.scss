@@ -1,0 +1,38 @@
+.modalContent {
+  box-sizing: border-box;
+  max-width: 90vw;
+
+    @media(max-width: 640px){
+      max-width: 100%;
+    }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: circle;
+
+    li {
+      display: inline-block;
+      box-sizing: border-box;
+      font-size: 14px;
+      line-height: 20px;
+      width: 95%;
+      margin: 0 5% 20px 0;
+      text-align: left;
+      list-style-type: circle;
+      margin-left: 30px;
+
+        @media(max-width: 640px) {
+          width: 100%;
+          margin: 15px 5% 0px 0;
+        }
+
+
+    }
+  }
+}

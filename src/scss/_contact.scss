@@ -1,0 +1,132 @@
+body{
+    background-color: #f8f8f8;
+}
+
+footer{
+  position: relative!important;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container{
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  @media(max-width: 768px) {
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-bottom: 100px;
+    max-width: 90vw;
+  }
+}
+
+input[type=text], select, textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=email], select, textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+}
+
+.interests{
+  margin-bottom: 20px;
+}
+
+.emailinput{
+  padding-top: 15px;
+}
+
+hr{
+  display: block;
+  border: 0;
+  height: 1px;
+  border-top: 1px solid #ddd;
+  margin-top: 15px;
+}
+
+button{
+  position: relative;
+  border-radius: 4px;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #fff;
+  border: 1px solid #f1f1f1;
+  padding: 12px 62px;
+  margin: 0 2px;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  transition: all .3s ease;
+  box-shadow: 0 6px 9px 0 rgba(0,0,0,.08); 
+  cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+
+
+
+#checkbox{
+  margin-bottom: 12px;
+  margin-right: 10px;
+}
+
+
+
+h1{
+
+  @media(max-width: 768px) {
+      font-size: 36px;
+  }
+}
+
+h2{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p{
+  font-size: 18px;
+  color: #767676;
+  margin-top: 5px;
+}
+
+a {
+  color: #767676;
+  text-decoration: none;
+}
+
+.left{
+  padding-top: 0px;
+}
+
+.left2{
+  padding-top: 40px;
+
+  @media(max-width: 768px) {
+      padding-top: 8px;
+  }
+}
